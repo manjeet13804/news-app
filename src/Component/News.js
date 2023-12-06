@@ -33,9 +33,9 @@ const News = (props) => {
       >
         <div className="container">
           <div className="row">
-            {articles.map((element) => {
+            {articles.map((element,index) => {
               return (
-                <div className="col-md-4" key={element.url}>
+                <div className="col-md-4" key={element.url+index}>
                   <NewsCard
                     title={
                       element.title

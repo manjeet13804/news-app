@@ -101,16 +101,17 @@ function App() {
             }
           />
           <Route path="home" element={<Home />}>
-            
+          
           </Route>
+          <Route path='/home/business' element={<News type='Business'  category="business" />}/>
+          <Route path='/home/entertainment' element={<News type='Entertainment'  category="entertainment" />}/>
+          <Route path='/home/general' element={<News type='General'  category="general" />}/>
+          <Route path='/home/health' element={<News type='Health'  category="health" />}/>
+          <Route path='/home/science' element={<News type='Science'  category="science" />}/>
+          <Route path='/home/sports' element={<News type='Sports'  category="sports" />}/>
+          <Route path='/home/technology' element={<News type='Technology'  category="technology" />}/>
           <Route path="/*" element={<Navigate to="/login" />} />
-          <Route path='/home/business' element={<News type='Business' country='us' category="business" />}/>
-          <Route path='/home/entertainment' element={<News type='Entertainment' country='us' category="entertainment" />}/>
-            <Route path='/home/general' element={<News type='General' country='us' category="general" />}/>
-            <Route path='/home/health' element={<News type='Health' country='us' category="health" />}/>
-            <Route path='/home/science' element={<News type='Science' country='us' category="science" />}/>
-            <Route path='/home/sports' element={<News type='Sports' country='us' category="sports" />}/>
-            <Route path='/home/technology' element={<News type='Technology' country='us' category="technology" />}/>
+          
         </Routes>
         <ToastContainer
           position="top-right"
