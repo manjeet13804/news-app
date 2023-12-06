@@ -7,7 +7,7 @@ const News = () => {
   const pageSize = "9";
   const country = "india";
   const category = "general";
-  const apiKey = "f74a28b9ec1f41e39e96ff8a151fbd2a";
+  const apiKey = "bde8189ac2c74355983d417b64b3a281";
 
   const { articles, totalResults, fetchMoreData } = FetchData(
     pageSize,

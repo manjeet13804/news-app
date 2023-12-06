@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { BasicButton, RouteButton } from "./Button";
+import { BasicFormButton, RouteButton } from "./Button";
 
 // d-flex align-items-center justify-content-center" style="min-height: 100vh;"
 
@@ -39,7 +39,7 @@ const Form = ({ title, setEmail, setPassword, handleAction }) => {
           </div>
         </div>
 
-        <BasicButton title={title} handleAction={handleAction} />
+        <BasicFormButton title={title} handleAction={handleAction} />
         <hr className="solid"></hr>
         <h5 className="mt-2">
           {title === "Login" ? "Need a account " : "Already have a account"}
