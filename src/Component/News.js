@@ -6,13 +6,13 @@ import InfiniteScroll from "react-infinite-scroll-component";
 const News = (props) => {
   const pageSize = "9";
   const country = "us";
-  const category = "general"
+  const category = props.category
   const apiKey = "caa1dea5d88845059fe2dc3df50a633e";
 
   const { articles, totalResults, fetchMoreData } = FetchData(
     pageSize,
     country,
-    props.category,
+    category,
     apiKey
   );
 
