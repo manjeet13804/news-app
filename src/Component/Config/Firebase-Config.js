@@ -3,12 +3,13 @@ import { initializeApp } from "firebase/app";
 
 // web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCdO0imjyAPRZeNmvx7HI3b9draaOC9jRQ",
-  authDomain: "news-app-triveous.firebaseapp.com",
-  projectId: "news-app-triveous",
-  storageBucket: "news-app-triveous.appspot.com",
-  messagingSenderId: "82558096592",
-  appId: "1:82558096592:web:0caab680f1044228cebad5"
+  apiKey: "AIzaSyAQXrYOX-8KPc71lVV05FqZyjhWOmWe58k",
+  authDomain: "news-app-1eb4c.firebaseapp.com",
+  projectId: "news-app-1eb4c",
+  storageBucket: "news-app-1eb4c.appspot.com",
+  messagingSenderId: "289967466364",
+  appId: "1:289967466364:web:adacdbb769271ba2b826f9",
+  measurementId: "G-EQ03RD6KPF"
 };
 
 // Initialize Firebase
