@@ -100,16 +100,17 @@ function App() {
               />
             }
           />
-          <Route path="/home" element={<Home />}>
-            <Route path='/home/business' element={<News key='business' country='india' category='business' />}></Route>
-            <Route path='/home/entertainment' element={<News key='entertainment' country='india' category='entertainment' />}></Route>
-            <Route path='/home/general' element={<News key='general' country='india' category='general' />}></Route>
-            <Route path='/home/health' element={<News key='health' country='india' category='health' />}></Route>
-            <Route path='/home/science' element={<News key='science' country='india' category='science' />}></Route>
-            <Route path='/home/sports' element={<News key='sports' country='india' category='sports' />}></Route>
-            <Route path='/home/technology' element={<News key='technology' country='india' category='technology' />}></Route>
+          <Route path="home" element={<Home />}>
+            
           </Route>
           <Route path="/*" element={<Navigate to="/login" />} />
+          <Route path='/home/business' element={<News key='business' country='us' category='business' />}/>
+          <Route path='entertainment' element={<News key='entertainment' country='us' category='entertainment' />}/>
+            <Route path='/home/general' element={<News key='general' country='us' category='general' />}/>
+            <Route path='/home/health' element={<News key='health' country='us' category='health' />}/>
+            <Route path='/home/science' element={<News key='science' country='us' category='science' />}/>
+            <Route path='/home/sports' element={<News key='sports' country='us' category='sports' />}/>
+            <Route path='/home/technology' element={<News key='technology' country='us' category='technology' />}/>
         </Routes>
         <ToastContainer
           position="top-right"

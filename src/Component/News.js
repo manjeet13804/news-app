@@ -3,11 +3,11 @@ import NewsCard from "./NewsCard";
 import FetchData from "./FetchData";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-const News = () => {
+const News = (props) => {
   const pageSize = "9";
-  const country = "india";
+  const country = "us";
   const category = "general";
-  const apiKey = "bde8189ac2c74355983d417b64b3a281";
+  const apiKey = "caa1dea5d88845059fe2dc3df50a633e";
 
   const { articles, totalResults, fetchMoreData } = FetchData(
     pageSize,
@@ -22,6 +22,7 @@ const News = () => {
 
   return (
     <>
+    {console.log(props)}
       <h2 className="d-flex justify-content-center mt-2 mb-2">
         News-App - Top Headlines {capsFirstLetter(category)}{" "}
       </h2>
