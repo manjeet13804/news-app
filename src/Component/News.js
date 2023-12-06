@@ -6,25 +6,25 @@ import InfiniteScroll from "react-infinite-scroll-component";
 const News = (props) => {
   const pageSize = "9";
   const country = "us";
-  const category = "general";
+  const category = "general"
   const apiKey = "caa1dea5d88845059fe2dc3df50a633e";
 
   const { articles, totalResults, fetchMoreData } = FetchData(
     pageSize,
     country,
-    category,
+    props.category,
     apiKey
   );
 
-  const capsFirstLetter = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  };
+  // const capsFirstLetter = (string) => {
+  //   return string.charAt(0).toUpperCase() + string.slice(1);
+  // };
 
   return (
     <>
-    {console.log(props)}
+    {console.log((props.category))}
       <h2 className="d-flex justify-content-center mt-2 mb-2">
-        News-App - Top Headlines {capsFirstLetter(category)}{" "}
+        News-App - Top Headlines {(props.type)}
       </h2>
       <InfiniteScroll
         dataLength={articles.length}
